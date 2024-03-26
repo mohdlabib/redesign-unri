@@ -12,7 +12,7 @@ Bootsrap, CountUp.js, Font Awesome, ionicons, slick.js, Animate.css, Aos,js.
 
 **Web:** https://redesign-unri.labibweb.my.id/
 
-![App Screenshot](https://github.com/mohdlabib/Animate-Cake-Java/blob/main/demo.gif?raw=true)
+![App Screenshot](https://github.com/mohdlabib/redesign-unri/blob/main/demo.gif?raw=true)
 
 
 ## 🥳 Authors
