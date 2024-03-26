@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <title>Redesign Web Unri - by Shadiq & Gum</title>
+</head>
+
+<body>
+
+    <!-- mobile nav -->
+    <section class="mobile-nav">
+        <div class="container">
+            <div class="card">
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="#" id="sideNavToggleGl"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="#" id="sideNavToggle"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header class="topbar">
+
+        <!-- menu mobile -->
+        <section id="sideNav" class="mobile-menu">
+            <div class="search">
+                <div class="d-flex">
+                    <div class="p-2 flex-grow-1">
+                        <input type="text" id="searchh" class="form-control" placeholder="CARI DISINI"
+                            id="exampleInputEmail1">
+                        <span class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    <div class="p-2">
+                        <a href="#" class="btn" id="closeNav"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container p-2">
+
+                    <ul class="list-group">
+                        <a href="berandaunri.html" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Beranda</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <li class="list-group-item linke">
+                            <div class="d-flex" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="false" aria-controls="collapseExample1" onclick="toggleIcon(this)">
+                                <div class="p-2 w-100">Tentang UNRI</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right" id="icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="collapse mt-2" id="collapseExample1">
+                                <div class="card border-0"
+                                    style="background-color: transparent; font-size: 15px; font-weight: 300;">
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="https://unri.ac.id/organisasi/">Organisasi</a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/pimpinan/"><span>Rektorat</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/senat-universitas-riau/"><span>Senat
+                                                Akademik</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/dewan-pengawas/"><span>Dewan
+                                                Pengawas</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/dekan-dan-wakil-dekan-universitas-riau/"><span>Fakultas
+                                                & Pascasarjana</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/direktur-dan-kepala-upt-universitas-riau/"><span>Unit
+                                                Pelaksana Teknis, Badan dan RSP</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/kepala-biro-universitas-riau/"><span>Biro</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/sekilas-unri/">Sekilas
+                                            UNRI</a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/sambutan-rektor/"><span>Sambutan
+                                                Rektor</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/sejarah-2/"><span>Sejarah</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/makna-lambang-unri/"><span>Lambang
+                                                UNRI</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/hymne-unri/"><span>Hymne
+                                                UNRI</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/mars-unri/"><span>Mars
+                                                UNRI</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/peta-kampus/"><span>Peta
+                                                Kampus</span></a>
+                                        <a class="list-group-item" href="#"><span>Visi, Misi dan
+                                                Tugas</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/visi-misi/"><span>Visi
+                                                Misi</span></a>
+                                        <a class="list-group-item"
+                                            href="https://unri.ac.id/tugas-dan-fungsi-unri/"><span>Tugas Dan
+                                                Fungsi UNRI</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item linke">
+                            <div class="d-flex" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                                aria-expanded="false" aria-controls="collapseExample2" onclick="toggleIcon(this)">
+                                <div class="p-2 w-100">Pendidikan</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right" id="icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="collapse mt-2" id="collapseExample2">
+                                <div class="card border-0"
+                                    style="background-color: transparent; font-size: 15px; font-weight: 300;">
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="https://unri.ac.id/fakultas/">Fakultas</a>
+                                        <a class="list-group-item" href="https://fkip.unri.ac.id/"><span>Fakultas
+                                                Keguruan dan Ilmu
+                                                Pendidikan</span></a>
+                                        <a class="list-group-item" href="https://fmipa.unri.ac.id/"><span>Fakultas
+                                                Matematika dan
+                                                Ilmu
+                                                Pengetahuan Alam</span></a>
+                                        <a class="list-group-item" href="https://ft.unri.ac.id/"><span>Fakultas
+                                                Teknik</span></a>
+                                        <a class="list-group-item" href="https://feb.unri.ac.id/"><span>Fakultas Ekonomi
+                                                dan
+                                                Bisnis</span></a>
+                                        <a class="list-group-item" href="https://faperta.unri.ac.id/"><span>Fakultas
+                                                Pertanian</span></a>
+                                        <a class="list-group-item" href="https://faperika.unri.ac.id/"><span>Fakultas
+                                                Perikanan dan
+                                                Kelautan</span></a>
+                                        <a class="list-group-item" href="https://fh.unri.ac.id/"><span>Fakultas
+                                                Hukum</span></a>
+                                        <a class="list-group-item" href="https://fisip.unri.ac.id/"><span>Fakultas Ilmu
+                                                Sosial dan
+                                                Ilmu
+                                                Politik</span></a>
+                                        <a class="list-group-item" href="https://fk.unri.ac.id/"><span>Fakultas
+                                                Kedokteran</span></a>
+                                        <a class="list-group-item" href="https://keperawatan.unri.ac.id/"><span>Fakultas
+                                                Keperawatan</span></a>
+                                        <a class="list-group-item" href="https://pascasarjana.unri.ac.id/"><span>Program
+                                                Pascasarjana</span></a>
+                                        <a class="list-group-item" href="https://unri.ac.id/program-pendidikan/">Program
+                                            Pendidikan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <a href="#" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Penelitian</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Mahasiswa</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">International</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <li class="list-group-item linke">
+                            <div class="d-flex" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                                aria-expanded="false" aria-controls="collapseExample3" onclick="toggleIcon(this)">
+                                <div class="p-2 w-100">Sistem Informasi</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right" id="icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="collapse mt-2" id="collapseExample3">
+                                <div class="card border-0"
+                                    style="background-color: transparent; font-size: 15px; font-weight: 300;">
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Penerimaan Mahasiswa
+                                            Baru</a>
+                                        <a class="list-group-item" href="#"><span>SNBP &
+                                                SNBT</span></a>
+                                        <a class="list-group-item" href="#"><span>PMB Jalur
+                                                PBUD/PBM</span></a>
+                                        <a class="list-group-item" href="#"><span>PMB
+                                                Mandiri</span></a>
+                                        <a class="list-group-item" href="#">Sistem Informasi
+                                            Akademik</a>
+                                        <a class="list-group-item" href="#"><span>Insentif
+                                                Penelitian dan Pengabdian</span></a>
+                                        <a class="list-group-item" href="#"><span>Karir dan
+                                                Wirausaha</span></a>
+                                        <a class="list-group-item" href="#"><span>Layanan Universitas
+                                                Riau</span></a>
+                                        <a class="list-group-item" href="#"><span>Portal Kuliah Kerja
+                                                Nyata</span></a>
+                                        <a class="list-group-item" href="#"><span>Portal Mahasiswa
+                                                dan Dosen</span></a>
+                                        <a class="list-group-item" href="#"><span>Sistem Informasi
+                                                Admisi</span></a>
+                                        <a class="list-group-item" href="#"><span>Sistem Informasi
+                                                Penelitian</span></a>
+                                        <a class="list-group-item" href="#"><span>Sistem Informasi
+                                                Registrasi Ulang</span></a>
+                                        <a class="list-group-item" href="#"><span>SISTER</span></a>
+
+                                        <a class="list-group-item" href="#">Layanan IT</a>
+                                        <a class="list-group-item" href="#"><span>Akun
+                                                Email</span></a>
+                                        <a class="list-group-item" href="#"><span>Domain
+                                                Website</span></a>
+                                        <a class="list-group-item" href="#"><span>Titik Access Point
+                                                Lingkungan UNRI</span></a>
+                                        <a class="list-group-item" href="#"><span>Dosen dan Mahasiswa
+                                                Terkendala Login LMS Selasi</span></a>
+                                        <a class="list-group-item" href="#"><span>Perbaikan Data
+                                                Civitas Akademika</span></a>
+                                        <a class="list-group-item" href="#"><span>Blog
+                                                Staff</span></a>
+                                        <a class="list-group-item" href="#"><span>VPN UNRI</span></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <a href="#" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Pendaftaran</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="content-2">
+                <div class="container p-2">
+                    <ul class="list-group">
+                        <a href="https://portal.unri.ac.id/" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Portal</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://unri.ac.id/wp-content/uploads/2023/10/20230727_Kalender-Akdemik-2023-2024.pdf"
+                            class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Kalender
+                                    Akademik</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://mail.unri.ac.id/" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Webmail</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://staff.unri.ac.id/" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Blog Staff</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://unri.ac.id/dokumen/" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Dokumen</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">Prestasi</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://ppid.unri.ac.id/" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">PPID</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://unri.ac.id/pkkmb/" class="list-group-item linke">
+                            <div class="d-flex">
+                                <div class="p-2 w-100">PKKMB</div>
+                                <div class="p-2 flex-shrink-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="d-flex container">
+                    <div class="p-2">
+                        <small class="text-white">Design by <code>❤</code> Shadiq & Gum</small>
+                    </div>
+                    <div class="p-2 ms-auto">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./assets/img/id.png" alt=""> ID
+                            </a>
+                            <ul class="dropdown-menu animate slideIn">
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="./assets/img/eng.png" alt=""> EN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- navbar secodary -->
+        <nav class="navbar navbar-secodary navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link nav-link-p" href="https://portal.unri.ac.id/">Portal</a>
+                        <a class="nav-link nav-link-p"
+                            href="https://unri.ac.id/wp-content/uploads/2023/10/20230727_Kalender-Akdemik-2023-2024.pdf">Kalender
+                            Akademik</a>
+                        <a class="nav-link nav-link-p" href="https://mail.unri.ac.id/">Webmail</a>
+                        <a class="nav-link nav-link-p" href="https://staff.unri.ac.id/">Blog Staff</a>
+                        <a class="nav-link nav-link-p" href="https://unri.ac.id/dokumen/">Dokumen</a>
+                        <a class="nav-link nav-link-p" href="https://unri.ac.id/#">Prestasi</a>
+                        <a class="nav-link nav-link-p" href="https://ppid.unri.ac.id/">PPID</a>
+                        <a class="nav-link nav-link-p" href="https://unri.ac.id/pkkmb/">PKKMB</a>
+
+                        <div class="vr"></div>
+
+                        <a class="nav-link" href="#">
+                            <ion-icon name="search-outline" class="icon"></ion-icon>
+                        </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./assets/img/id.png" alt=""> ID
+                            </a>
+                            <ul class="dropdown-menu animate slideIn">
+                                <li>
+                                    <a class="dropdown-item" href="#"><img src="./assets/img/eng.png" alt=""> EN</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-primary navbar-expand-lg  sticky">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="berandaunri.html">Beranda</a>
+                        </li>
+
+                        <!-- mega dropdown -->
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link" href="#" data-bs-auto-close="outside">Tentang UNRI</a>
+                            <div class="dropdown-menu">
+                                <div class="mega-content animate slideIn px-3">
+                                    <div class="bg-nav"></div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top"
+                                                        href="https://unri.ac.id/organisasi/">Organisasi</a>
+                                                    <a class="list-group-item second mt-2"
+                                                        href="https://unri.ac.id/pimpinan/"><span>Rektorat</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/senat-universitas-riau/"><span>Senat
+                                                            Akademik</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/dewan-pengawas/"><span>Dewan
+                                                            Pengawas</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/dekan-dan-wakil-dekan-universitas-riau/"><span>Fakultas
+                                                            & Pascasarjana</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/direktur-dan-kepala-upt-universitas-riau/"><span>Unit
+                                                            Pelaksana Teknis, Badan dan RSP</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/kepala-biro-universitas-riau/"><span>Biro</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top"
+                                                        href="https://unri.ac.id/sekilas-unri/">Sekilas UNRI</a>
+                                                    <a class="list-group-item second mt-2"
+                                                        href="https://unri.ac.id/sambutan-rektor/"><span>Sambutan
+                                                            Rektor</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/sejarah-2/"><span>Sejarah</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/makna-lambang-unri/"><span>Lambang
+                                                            UNRI</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/hymne-unri/"><span>Hymne
+                                                            UNRI</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/mars-unri/"><span>Mars UNRI</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/peta-kampus/"><span>Peta
+                                                            Kampus</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top" href="#"><span>Visi, Misi dan
+                                                            Tugas</span></a>
+                                                    <a class="list-group-item second mt-2"
+                                                        href="https://unri.ac.id/visi-misi/"><span>Visi Misi</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://unri.ac.id/tugas-dan-fungsi-unri/"><span>Tugas Dan
+                                                            Fungsi UNRI</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- mega dropdown -->
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link" href="#" data-bs-auto-close="outside">Pendidikan</a>
+                            <div class="dropdown-menu">
+                                <div class="mega-content animate slideIn px-3">
+                                    <div class="bg-nav"></div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top"
+                                                        href="https://unri.ac.id/fakultas/">Fakultas</a>
+                                                    <a class="list-group-item second mt-2"
+                                                        href="https://fkip.unri.ac.id/"><span>Fakultas Keguruan dan Ilmu
+                                                            Pendidikan</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://fmipa.unri.ac.id/"><span>Fakultas Matematika dan
+                                                            Ilmu
+                                                            Pengetahuan Alam</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://ft.unri.ac.id/"><span>Fakultas Teknik</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://feb.unri.ac.id/"><span>Fakultas Ekonomi dan
+                                                            Bisnis</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://faperta.unri.ac.id/"><span>Fakultas
+                                                            Pertanian</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://faperika.unri.ac.id/"><span>Fakultas Perikanan dan
+                                                            Kelautan</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://fh.unri.ac.id/"><span>Fakultas Hukum</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://fisip.unri.ac.id/"><span>Fakultas Ilmu Sosial dan
+                                                            Ilmu
+                                                            Politik</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://fk.unri.ac.id/"><span>Fakultas
+                                                            Kedokteran</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://keperawatan.unri.ac.id/"><span>Fakultas
+                                                            Keperawatan</span></a>
+                                                    <a class="list-group-item second"
+                                                        href="https://pascasarjana.unri.ac.id/"><span>Program
+                                                            Pascasarjana</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top"
+                                                        href="https://unri.ac.id/program-pendidikan/">Program
+                                                        Pendidikan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lppm.unri.ac.id/">Penelitian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://kemahasiswaan.unri.ac.id/">Mahasiswa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://international.unri.ac.id/">International</a>
+                        </li>
+
+                        <!-- mega dropdown -->
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link" href="#" data-bs-auto-close="outside">Sistem Informasi</a>
+                            <div class="dropdown-menu">
+                                <div class="mega-content animate slideIn px-3">
+                                    <div class="bg-nav"></div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top" href="#">Penerimaan Mahasiswa
+                                                        Baru</a>
+                                                    <a class="list-group-item second mt-2" href="#"><span>SNBP &
+                                                            SNBT</span></a>
+                                                    <a class="list-group-item second" href="#"><span>PMB Jalur
+                                                            PBUD/PBM</span></a>
+                                                    <a class="list-group-item second" href="#"><span>PMB
+                                                            Mandiri</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top" href="#">Sistem Informasi
+                                                        Akademik</a>
+                                                    <a class="list-group-item second mt-2" href="#"><span>Insentif
+                                                            Penelitian dan Pengabdian</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Karir dan
+                                                            Wirausaha</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Layanan Universitas
+                                                            Riau</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Portal Kuliah Kerja
+                                                            Nyata</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Portal Mahasiswa
+                                                            dan Dosen</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Sistem Informasi
+                                                            Admisi</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Sistem Informasi
+                                                            Penelitian</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Sistem Informasi
+                                                            Registrasi Ulang</span></a>
+                                                    <a class="list-group-item second" href="#"><span>SISTER</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 py-1">
+                                                <div class="list-group">
+                                                    <a class="list-group-item top" href="#">Layanan IT</a>
+                                                    <a class="list-group-item second mt-2" href="#"><span>Akun
+                                                            Email</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Domain
+                                                            Website</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Titik Access Point
+                                                            Lingkungan UNRI</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Dosen dan Mahasiswa
+                                                            Terkendala Login LMS Selasi</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Perbaikan Data
+                                                            Civitas Akademika</span></a>
+                                                    <a class="list-group-item second" href="#"><span>Blog
+                                                            Staff</span></a>
+                                                    <a class="list-group-item second" href="#"><span>VPN UNRI</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://pmb.unri.ac.id/">Pendaftaran</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- overlay -->
+    <header class="video-overlay">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/video/bg.mp4" type="video/mp4">
+        </video>
+
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 neksik text-white">
+                    <img src="./assets/img/logo-putih.png" alt="">
+                    <h3 class="info">Selamat datang di Website</h3>
+                    <h3 class="title">Universitas Riau</h3>
+
+                    <div class="mouse animate__animated animate__shakeY animate__infinite animate__slower">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- about -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 info">
+                    <h2 data-aos="fade-right">Tentang UNRI</h2>
+                    <h6 data-aos="fade-right">Turut mengahasilkan SDM yang unggul di tingkat pendidikan tinggi sejak
+                        1962 baik di Provinsi
+                        Riau maupun Skala nasional. Meningkatkan dan memperkokoh daya saing SDM melalui tri dharma
+                        pergurauan tinggi: pendidikan & pengajaran, penelitian, dan pengabdian kepada masyarakat.
+                        Berkontribusi dalam memenuhi kebutuhan teknologi, menciptakan lapangan kerja, pertumbuhan
+                        ekonomi regional dan nasional. Menyediakan dan mengatur pendanaan bagi penyediaan sarana dan
+                        prasarana pendidikan serta penyelenggaraan pendidikan sesuai dengan standar dengan mutu terbaik.
+                    </h6>
+                    <a href="https://unri.ac.id/sejarah/" data-aos="fade-right" class="btn mt-3">Selengkapnya <span
+                            class="icon"><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <div class="col-md-7 photo">
+                    <div class="photo-1" data-aos="fade-up-left"></div>
+                    <div class="photo-2" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="background-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- card pascasarjana -->
+    <section class="pascasarjana">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://um.unri.ac.id/umx/">
+                        <div class="card">
+                            <img src="https://unri.ac.id/wp-content/uploads/2023/08/Melahirkan-Generasi-Wirausaha-Muda-Melalui-MBKM.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <h4><i class="fa-solid fa-user"></i> Program Sarjana</h4>
+                                <p>Program sarjana bisa diikuti oleh lulusan SMA/SMK/MA/MAK, mempunyai beban studi
+                                    144-160 sks dan dapat ditempuh dalam waktu 8-14 semester.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://um.unri.ac.id/umx/">
+                        <div class="card">
+                            <img src="https://unri.ac.id/wp-content/uploads/2023/12/Serahkan-DIPA-ke-Fakultas-Lembaga-dan-Unit-Rektor-UNRI-Gunakan-Anggaran-Sebaik-Baiknya.gif"
+                                alt="">
+                            <div class="card-body">
+                                <h4><i class="fa-solid fa-user-graduate"></i> Program Pascasarjana</h4>
+                                <p>UNRI menawarkan program studi lanjutan di tingkat S2 dan S3 yang diselenggarakan
+                                    di fakultas serta sekolah Pascasarjana.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://um.unri.ac.id/umx/">
+                        <div class="card">
+                            <img src="https://unri.ac.id/wp-content/uploads/2023/09/UNRI-Kembali-Ikuti-Ajang-Kontes-Robot-Terbang-Tingkat-Nasional.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <h4><i class="fa-solid fa-user-doctor"></i> Program Profesi</h4>
+                                <p>Program profesi diperuntukkan sebagai bagi lulusan program studi tertentu sebagai
+                                    syarat untuk mendapatkan gelar keprofesian.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-warna"></div>
+
+    </section>
+
+    <!-- penelitian -->
+    <section class="penelitian">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 photo">
+                    <div class="photo-1" data-aos="fade-up-right"></div>
+                    <div class="photo-2" data-aos="fade-up-left" data-aos-duration="1000">
+                        <div class="background-image"></div>
+                    </div>
+                </div>
+                <div class="col-md-5 info">
+                    <h2 data-aos="fade-left">Penelitian</h2>
+                    <h6 data-aos="fade-left">Sebagai Universitas Riset Berkelas Dunia, Universitas Riau memberikan
+                        perhatian khusus terhadap
+                        kegiatan-kegiatan penelitian serta mendorong dosen dan mahasiswa untuk melakukan dan
+                        mengembangkan berbagai penelitian yang berorientasi untuk memenuhi kebutuhan bangsa.
+                    </h6>
+                    <a href="https://lppm.unri.ac.id/" data-aos="fade-left" class="btn mt-3">Selengkapnya <span
+                            class="icon"><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- card kkn, alumni, KEMAHASISWAAN -->
+    <section class="alumnikkn">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><span class="acos"><span class="iconw"
+                                        style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/circle-sec2.svg');"></span>
+                                    Pengabdian Masyarakat</span></h4>
+                            <p>UNRI secara konsisten dan sistematik sejak tahun pendiriannya 1962 berjuang bersama
+                                rakyat hingga akar rumput membangun dan menyejahterakan Indonesia. </p>
+                            <a href="http://lppm.unri.ac.id/">Selengkapnya Pengabdian Masyarakat <span class="icon"><i
+                                        class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><span class="acos"><span class="iconw"
+                                        style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/plusx-sec2.svg');"></span>
+                                    Kemahasiswaan</span></h4>
+                            <p>Mencetak mahasiswa berwawasan global dan berintegritas yang dilandasi nilai-nilai
+                                Pancasila.</p>
+                            <a href="https://kemahasiswaan.unri.ac.id/">Selengkapnya Kemahasiswaan <span class="icon"><i
+                                        class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><span class="acos"><span class="iconw"
+                                        style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/stripe-sec2.svg');"></span>
+                                    Alumni</span></h4>
+                            <p>Alumni UNRI tersebar di berbagai wilayah, berkiprah di tingkat nasional dan global.</p>
+                            <a href="http://tracer.unri.ac.id/dashboard/tracer">Selengkapnya Alumni <span
+                                    class="icon"><i class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gurubesar -->
+    <section class="gurubesar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mt-3 card-logo">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="./assets/img/icon.png" alt="">
+                            </div>
+
+                            <h4>Kampus</h4>
+                            <h4 class="title">Universitas <span>Riau</span></h4>
+
+                            <p>Universitas <span>Riau</span> Bermartabat • <span>Riau</span> Hebat • Indonesia Kuat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card-lain">
+                    <div class="card">
+                        <div class="d-flex">
+                            <div class="card-left">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <h6 id="cuMa">0</h6>
+                                <p>Mahasiswa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="d-flex">
+                            <div class="card-left">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <h6 id="cuDo">0</h6>
+                                <p>Dosen</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="d-flex">
+                            <div class="card-left">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <h6 id="cuGb">0</h6>
+                                <p>Guru Besar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 card-lain">
+                    <div class="card">
+                        <div class="d-flex">
+                            <div class="card-left">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <h6 id="cuFa">0</h6>
+                                <p>Fakultas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="d-flex">
+                            <div class="card-left">
+                                <i class="fa-solid fa-user-nurse"></i>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <h6 id="cuPro">0</h6>
+                                <p>Program Studi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="d-flex">
+                            <div class="card-left">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div class="p-2 flex-grow-1">
+                                <h6 id="cuTe">0</h6>
+                                <p>Tenaga Kependidikan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile cardlina -->
+            </div>
+
+            <div class="card-lain-mobile">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="card-left">
+                                    <i class="fa-solid fa-user-graduate"></i>
+                                </div>
+                                <div class="p-2 flex-grow-1">
+                                    <h6 id="cuMaM">0</h6>
+                                    <p>Mahasiswa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="card-left">
+                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                </div>
+                                <div class="p-2 flex-grow-1">
+                                    <h6 id="cuDoM">0</h6>
+                                    <p>Dosen</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="card-left">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="p-2 flex-grow-1">
+                                    <h6 id="cuGbM">0</h6>
+                                    <p>Guru Besar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="card-left">
+                                    <i class="fa-solid fa-school"></i>
+                                </div>
+                                <div class="p-2 flex-grow-1">
+                                    <h6 id="cuFaM">0</h6>
+                                    <p>Fakultas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="card-left">
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                </div>
+                                <div class="p-2 flex-grow-1">
+                                    <h6 id="cuProM">0</h6>
+                                    <p>Program Studi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex">
+                                <div class="card-left">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                </div>
+                                <div class="p-2 flex-grow-1">
+                                    <h6 id="cuTeM">0</h6>
+                                    <p>Tenaga Kependidikan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pengumuman -->
+    <section class="pengumuman">
+        <div class="container">
+
+            <div class="d-flex title">
+                <div class="p-2 flex-grow-1">
+                    <h4><span class="acos"><span class="iconw"
+                                style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/flower-sec2.svg');"></span>
+                            Pengumuman</span></h4>
+                </div>
+                <div class="p-2 pengumumanLa">
+                    <a href="https://unri.ac.id/category/pengumuman/">Pengumuman Lainnya <span class="icon"><i
+                                class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+
+            <div class="row" id="sliderP" data-aos="fade-up">
+                <div class="col">
+                    <a
+                        href="https://unri.ac.id/hasil-evaluasi-daya-tampung-program-studi-yang-terdeteksi-kenaikan-anomali/">
+                        <p>Selasa, 27 Februari 2024</p>
+                        <h6>Hasil Evaluasi Daya Tampung Program Studi Yang Terdeteksi Kenaikan Anomali</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://unri.ac.id/pembayaran-ukt-spp-semester-genap-tahun-akademik-2024-2024/">
+                        <p>Selasa, 27 Februari 2024</p>
+                        <h6>Pembayaran UKT/SPP Semester Genap tahun Akademik 2024/2024</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a
+                        href="https://unri.ac.id/pengajuan-revisi-ukt-mahasiswa-angkatan-2023-pemegang-kip-kuliah-yang-tidak-termasuk-penerima-beasiswa-kip-kuliah/">
+                        <p>Selasa, 27 Februari 2024</p>
+                        <h6>Pengajuan Revisi UKT Mahasiswa Angkatan 2023 Pemegang KIP Kuliah yang Tidak Termasuk
+                            Penerima Beasiswa KIP Kuliah</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a
+                        href="https://unri.ac.id/hasil-akhir-seleksi-kelulusan-pppk-kebutuhan-tenaga-teknis-dan-tenaga-kesehatan-kemdikbudristek-ta-2023/">
+                        <p>Selasa, 27 Februari 2024</p>
+                        <h6>Hasil Akhir Seleksi (Kelulusan) PPPK Kebutuhan Tenaga Teknis dan Tenaga Kesehatan
+                            Kemdikbudristek TA 2023</h6>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://unri.ac.id/hasil-skd-cpns-kemdikbudristek-ta-2023/">
+                        <p>Selasa, 27 Februari 2024</p>
+                        <h6>Hasil SKD CPNS Kemdikbudristek TA 2023</h6>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center lainya-m">
+                <a href="https://unri.ac.id/category/pengumuman/">Pengumuman Lainnya <span class="icon"><i
+                            class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- berita -->
+    <section class="berita">
+        <div class="container">
+
+            <h4 class="title"><span class="acos"><span class="iconw"
+                        style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/circle-sec2.svg');"></span>
+                    Berita</span></h4>
+
+            <div class="row">
+
+                <!-- berita utama -->
+                <div class="col-md-6 mt-3 post-1" data-aos="fade-right" data-aos-duration="1000">
+                    <a
+                        href="https://unri.ac.id/sejarah-baru-bagi-unri-8-mahasiswa-lolos-program-bergengsi-indonesian-international-student-mobility-awards-iisma/">
+                        <div class="card shadow-sm">
+                            <img src="https://unri.ac.id/wp-content/uploads/2024/03/Sejarah-Baru-Bagi-UNRI-8-Mahasiswa-Lolos-Program-Bergengsi-Indonesian-International-Student-Mobility-Awards-IISMA-400x245.gif"
+                                alt="">
+                            <div class="card-body">
+                                <h6>Sejarah Baru Bagi UNRI, 8 Mahasiswa Lolos Program Bergengsi Indonesian International
+                                    Student Mobility Awards (IISMA)</h6>
+                                <p>22 Maret 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 mt-3 post-2" data-aos="fade-left" data-aos-duration="1000">
+                    <a href="https://unri.ac.id/berkunjung-ke-unri-bi-riau-sampaikan-beasiswa/">
+                        <div class="card shadow-sm">
+                            <img src="https://unri.ac.id/wp-content/uploads/2024/03/Berkunjung-ke-UNRI-BI-Riau-Sampaikan-Beasiswa-400x245.gif"
+                                alt="">
+                            <div class="card-body">
+                                <p>21 Maret 2024</p>
+                                <h6>Berkunjung ke UNRI, BI Riau Sampaikan Beasiswa</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mt-3 post-3" data-aos="fade-left" data-aos-duration="1000">
+                    <a href="https://unri.ac.id/unri-jalin-kerja-sama-dengan-kadin-dumai/">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <p class="ttl">20 Maret 2024</p>
+                                <h6>UNRI Jalin Kerja Sama dengan Kadin Dumai</h6>
+                                <p>Unrinews. Dalam rangka audiensi penandatanganan kerja sama, Universitas Riau (UNRI)
+                                    menerima kunjungan dari Kamar Dagang Industri (Kadin) Kota Dumai (20/03/2024). </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row" id="sliderB">
+                <!-- latest berita -->
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2 mt-3 post-lain">
+                    <a href="https://unri.ac.id/rektor-unri-jadi-saksi-pelantikan-pj-sekda-provinsi-riau/">
+                        <div class="card shadow-sm">
+                            <img src="https://unri.ac.id/wp-content/uploads/2024/03/Rektor-UNRI-Jadi-Saksi-Pelantikan-PJ-Sekda-Provinsi-Riau-400x245.gif"
+                                alt="">
+                            <div class="card-body">
+                                <h6>Rektor UNRI Jadi Saksi Pelantikan PJ. Sekda Provinsi Riau</h6>
+                                <p>19 Maret 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2 mt-3 post-lain">
+                    <a
+                        href="https://unri.ac.id/optimalisasi-program-kerja-bidang-akademis-dan-kemahasiswaan-untuk-akselerasi-capaian-kinerja-tahun-2025/">
+                        <div class="card shadow-sm">
+                            <img src="https://unri.ac.id/wp-content/uploads/2024/03/Optimalisasi-Program-Kerja-Bidang-Akademis-dan-Kemahasiswaan-Untuk-Akselerasi-Capaian-Kinerja-Tahun-2025-400x245.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <h6>Optimalisasi Program Kerja Bidang Akademis dan Kemahasiswaan..</h6>
+                                <p>18 Maret 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2 mt-3 post-lain">
+                    <a
+                        href="https://unri.ac.id/innovasi-tim-promeeg-universitas-riau-raih-runner-up-carbon-neutral-solution-anugrah-innovillage-2023/">
+                        <div class="card shadow-sm">
+                            <img src="https://unri.ac.id/wp-content/uploads/2024/03/INNOVASI-TIM-PROMEEG-UNIVERSITAS-RIAU-RAIH-RUNNER-UP-CARBON-NEUTRAL-SOLUTION-ANUGRAH-INNOVILLAGE-2023-400x245.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <h6>INOVASI TIM PROMEEG UNIVERSITAS RIAU RAIH RUNNER U..</h6>
+                                <p>18 Maret 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2 mt-3 post-lain">
+                    <a
+                        href="https://unri.ac.id/soft-launching-smmptn-barat-2024-unri-1-dari-25-ptn-peserta-smmptn-barat-2024/">
+                        <div class="card shadow-sm">
+                            <img class="agaklain"
+                                src="https://unri.ac.id/wp-content/uploads/2024/03/Soft-Launching-SMMPTN-Barat-2024-UNRI-1-dari-25-PTN-Peserta-SMMPTN-Barat-2024.gif"
+                                alt="">
+                            <div class="card-body">
+                                <h6>Soft Launching SMMPTN Barat 2024, UNRI 1 dari 25 PTN..</h6>
+                                <p>13 Maret 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2 mt-3 post-lain">
+                    <a href="https://unri.ac.id/tambis-sri-kandi-wadah-bertemunya-para-peneliti-dan-pengusaha/">
+                        <div class="card shadow-sm">
+                            <img class="agaklain"
+                                src="https://unri.ac.id/wp-content/uploads/2024/03/Tambis-Sri-KANDI-Wadah-Bertemunya-Para-Peneliti-dan-Pengusaha.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <h6>‘Tambis Sri-KANDI’, Wadah Bertemunya Para Peneliti dan Pengusaha</h6>
+                                <p>8 Maret 2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-md-2 mt-3 post-lainya">
+                    <a href="https://unri.ac.id/category/berita/">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h6>Jelajahi<br>update berita<br>lainnya</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center lainya-m">
+                <a href="https://unri.ac.id/category/berita/">Berita Lainnya <span class="icon"><i
+                            class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- layanan -->
+    <section class="layanan">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="title"><span class="acos"><span class="iconw"
+                                style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/flower-sec2.svg');"></span>
+                            Layanan Publik</span></h4>
+
+                    <div class="row pertama" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="col-md-3 col-6 mt-3">
+                            <a href="https://ppid.unri.ac.id/">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <img src="https://unri.ac.id/wp-content/uploads/2021/07/SELAMAT-400x256.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3">
+                            <a href="https://www.lapor.go.id/">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <img src="https://unri.ac.id/wp-content/uploads/2021/07/SELAMAT-1-400x256.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3">
+                            <a href="https://wbs.kemdikbud.go.id/">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <img src="https://unri.ac.id/wp-content/uploads/2021/07/SELAMAT-3-400x256.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3">
+                            <a href="#">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <img src="https://unri.ac.id/wp-content/uploads/2021/07/SELAMAT-2-400x256.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3">
+                            <a href="https://satgasppks.unri.ac.id/">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <img src="https://unri.ac.id/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-24-at-135337-400x335.jpeg"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 afen" data-aos="fade-up-left" data-aos-duration="1000">
+                    <h4 class="title"><span class="acos"><span class="iconw"
+                                style="background-image: url('https://konten.usu.ac.id/storage/satker/0/icons/flower-sec2.svg');"></span>
+                            Agenda</span></h4>
+
+                    <div class="card kedua shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h6>Agenda</h6>
+
+                                <p>Belum ada Agenda Kegiatan</p>
+                                <img src="./assets/img/tidur.webp" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-grid mt-3 gap-2">
+                        <a class="btn btn-lainya shadow-sm" href="">
+                            <span class="circle"><i class="fa-solid fa-chevron-right"></i></span>
+                            <span class="text">Agenda Selengkapnya</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container subcribe">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="d-flex">
+                                        <div>
+                                            <span class="icons"><i class="fa-solid fa-envelope"></i></span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6>Ingin Berita Terbaru?</h6>
+                                            <p>Kami akan mengirimi berita update lewat Email.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <input type="email" placeholder="burham@gmail.com" class="form-control"
+                                            id="exampleInputEmail1">
+                                        <button type="button" class="btn btn-subs"><span>Subcribe </span></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container footer-atas">
+            <div class="row">
+                <div class="col-md-4 fot-1">
+
+                    <div class="d-flex flex-md-row flex-column mb-3">
+                        <div class="p-2"><img src="./assets/img/logo-putih.png" alt=""></div>
+                        <div class="p-2">
+                            <h6>Universitas Riau</h6>
+                            <p class="desc">Kampus Bina Widya KM.12,5, Simpang Baru, Kec.Tampan, Kota Pekanbaru, Riau 28293</p>
+                            <p class="contact"><span>Email: </span>rektor@unri.ac.id<br><span>Telp: </span>(0761) 63266
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 fot-2">
+                    <ul class="list-group">
+                        <li class="list-group-item title asdc">TENTANG UNRI</li>
+                        <a href="https://unri.ac.id/sejarah-2/" class="list-group-item list-1">Sejarah</a>
+                        <a href="https://unri.ac.id/fakultas/" class="list-group-item list-1">Fakultas</a>
+                        <a href="https://unri.ac.id/visi-misi/" class="list-group-item list-1">Visi dan Misi</a>
+                        <a href="#" class="list-group-item list-1">Agenda</a>
+                        <a href="https://unri.ac.id/wp-content/uploads/2023/10/20230727_Kalender-Akdemik-2023-2024.pdf"
+                            class="list-group-item list-1">Kalender Akademik</a>
+                    </ul>
+                </div>
+                <div class="col-md-3 fot-3">
+                    <ul class="list-group">
+                        <li class="list-group-item title asdc">INFORMASI PILIHAN</li>
+                        <a href="http://pendaftaranulang.unri.ac.id/" class="list-group-item list-1">Paduan
+                            Pendaftaran</a>
+                        <a href="#" class="list-group-item list-1">Sistem Informasi</a>
+                        <a href="https://international.unri.ac.id/" class="list-group-item list-1">Internasional</a>
+                        <a href="#" class="list-group-item list-1">Peta situs</a>
+                        <a href="#" class="list-group-item list-1">Portal</a>
+                    </ul>
+                </div>
+                <div class="col-md-2 fot-4">
+                    <ul class="list-group">
+                        <li class="list-group-item asdc">PETA</li>
+                        <li href="#" class="list-group-item">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.680402795356!2d101.37845831535613!3d0.4764003638901464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea1f427ab57%3A0x74d49c35acbd10e1!2sUniversitas+Riau!5e0!3m2!1sen!2sid!4v1472616061754"
+                                frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bawah">
+            <div class="d-flex container">
+                <div class="p-2 flex-grow-1">
+                    <small>Design by <code>❤</code> Shadiq & Gum</small>
+                </div>
+                <div class="p-2 social">
+                    <a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
+    <script>
+        $('.sliderB').slick({
+            dots: true,
+            infinite: true,
+        });
+
+        function updateScrollValue() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            if (scrollTop > 70) {
+                document.querySelector('.topbar').classList.add('navbar-active');
+            } else {
+                document.querySelector('.topbar').classList.remove('navbar-active');
+            }
+
+        }
+
+        window.addEventListener('scroll', updateScrollValue);
+
+        AOS.init();
+    </script>
+
+    <!-- sideNav -->
+    <script>
+        let sideNavToggle = document.querySelector('#sideNavToggle')
+        let sideNavToggleGl = document.querySelector('#sideNavToggleGl')
+        let closeNav = document.querySelector('#closeNav')
+
+        sideNavToggle.addEventListener('click', e => {
+            e.preventDefault()
+            e.stopImmediatePropagation()
+
+            document.querySelector('#sideNav').classList.toggle('active')
+        })
+
+        closeNav.addEventListener('click', e => {
+            e.preventDefault()
+            e.stopImmediatePropagation()
+
+            document.querySelector('#sideNav').classList.remove('active')
+        })
+
+        sideNavToggleGl.addEventListener('click', e => {
+            e.preventDefault()
+            e.stopImmediatePropagation()
+
+            document.querySelector('#sideNav').classList.toggle('active')
+            document.querySelector('#searchh').focus()
+        })
+    </script>
+
+    <script>
+        function toggleIcon(data) {
+            let icon = data.querySelector('#icon');
+
+            if (icon.classList.contains("fa-chevron-right")) {
+                icon.classList.remove("fa-chevron-right");
+                icon.classList.add("fa-chevron-down");
+            } else {
+                icon.classList.remove("fa-chevron-down");
+                icon.classList.add("fa-chevron-right");
+            }
+        }
+    </script>
+
+    <!-- countUP -->
+    <script>
+        var options = {
+            useEasing: !0,
+            useGrouping: !0,
+            separator: ".",
+            decimal: ","
+        }
+
+        let delay = 3.5;
+
+        let panel1 = new CountUp("cuMa", 0, 35388, 0, delay, options);
+        let panel2 = new CountUp("cuDo", 0, 1170, 0, delay, options);
+        let panel3 = new CountUp("cuGb", 0, 107, 0, delay, options);
+        let panel4 = new CountUp("cuFa", 0, 10, 0, delay, options);
+        let panel5 = new CountUp("cuPro", 0, 109, 0, delay, options);
+        let panel6 = new CountUp("cuTe", 0, 902, 0, delay, options);
+
+        // mobile
+        let panel1M = new CountUp("cuMaM", 0, 35388, 0, delay, options);
+        let panel2M = new CountUp("cuDoM", 0, 1170, 0, delay, options);
+        let panel3M = new CountUp("cuGbM", 0, 107, 0, delay, options);
+        let panel4M = new CountUp("cuFaM", 0, 10, 0, delay, options);
+        let panel5M = new CountUp("cuProM", 0, 109, 0, delay, options);
+        let panel6M = new CountUp("cuTeM", 0, 902, 0, delay, options);
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+
+                if (2350 < parseInt($(window).scrollTop())) {
+                    panel1.start();
+                    panel2.start();
+                    panel3.start();
+                    panel4.start();
+                    panel5.start();
+                    panel6.start();
+                } else {
+                    panel1.reset();
+                    panel2.reset();
+                    panel3.reset();
+                    panel4.reset();
+                    panel5.reset();
+                    panel6.reset();
+                }
+
+                if (3400 < parseInt($(window).scrollTop())) {
+                    panel1M.start();
+                    panel2M.start();
+                    panel3M.start();
+                    panel4M.start();
+                    panel5M.start();
+                    panel6M.start();
+                } else {
+                    panel1M.reset();
+                    panel2M.reset();
+                    panel3M.reset();
+                    panel4M.reset();
+                    panel5M.reset();
+                    panel6M.reset();
+                }
+            })
+        })
+    </script>
+
+    <!-- responsive -->
+    <script>
+        $(document).ready(function () {
+            let sliderP = $('#sliderP');
+            let sliderB = $('#sliderB');
+
+            function toggleSlider() {
+                if ($(window).width() < 980) {
+                    sliderP.addClass('slider');
+                    if (!sliderP.hasClass('slick-initialized')) {
+                        sliderP.slick({
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            responsive: [{
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                }
+                            ]
+                        });
+                    }
+                } else {
+                    sliderP.removeClass('slider');
+                    if (sliderP.hasClass('slick-initialized')) {
+                        sliderP.slick('unslick');
+                    }
+                }
+
+                if ($(window).width() < 980) {
+                    sliderB.addClass('slider');
+                    if (!sliderB.hasClass('slick-initialized')) {
+                        sliderB.slick({
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            responsive: [{
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 3,
+                                        slidesToScroll: 3,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        dots: true
+                                    }
+                                }
+                            ]
+                        });
+                    }
+                } else {
+                    sliderB.removeClass('slider');
+                    if (sliderB.hasClass('slick-initialized')) {
+                        sliderB.slick('unslick');
+                    }
+                }
+            }
+
+            // Panggil toggleSlider() saat dokumen siap
+            toggleSlider();
+
+            // Panggil toggleSlider() saat ukuran jendela berubah
+            $(window).on('resize', function () {
+                toggleSlider();
+            });
+        });
+    </script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

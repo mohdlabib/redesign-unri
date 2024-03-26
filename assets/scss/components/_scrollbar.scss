@@ -1,0 +1,21 @@
+/* Menyesuaikan scrollbar untuk semua elemen */
+::-webkit-scrollbar {
+    width: 4px; /* Lebar scrollbar */
+    height: 500px;
+}
+
+/* Menyesuaikan track (track adalah area di sekitar thumb) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Warna latar belakang scrollbar */
+}
+
+/* Menyesuaikan thumb (thumb adalah bagian yang dapat digerakkan) */
+::-webkit-scrollbar-thumb {
+    background-color: #bebebe; /* Warna thumb */
+    border-radius: 3px; /* Mengatur sudut border */
+}
+
+/* Menyesuaikan thumb saat dihover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bebebe; /* Warna thumb saat dihover */
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import './components/root';
+@import './components/scrollbar';
+
+// components
+@import './components/navbar';
+@import './components/video-overlay';
+@import './components/sec-tentang';
+@import './components/pascasarjana';
+@import './components/penelitian';
+@import './components/alumnikkn';
+@import './components/gurubesar';
+@import './components/pengumuman';
+@import './components/berita';
+@import './components/layanan';
+@import './components/footer';
+
+
+// mobile
+@import './mobiles/navbar';
+@import './mobiles/overlay';
+@import './mobiles/about';
+@import './mobiles/penelitian';
+@import './mobiles/alumnikkn';
+@import './mobiles/gurubesar';
+@import './mobiles/pegumuman';
+@import './mobiles/berita';
+@import './mobiles/layanan';
+@import './mobiles/footer';

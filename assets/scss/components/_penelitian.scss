@@ -1,0 +1,77 @@
+.penelitian {
+    position: relative;
+    padding-top: -120px;
+    background-color: #f8f8f8;
+
+    .photo-1 {
+        border-radius: 10px;
+        height: 600px;
+        width: 600px;
+        left: 0px;
+        position: relative;
+        background-image: url('../img/pel-1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .photo-2 {
+        height: 350px;
+        width: 300px;
+        top: -300px;
+        right: -400px;
+        position: relative;
+        margin-bottom: -230px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 20px solid white;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .photo-2 .background-image {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-image: url('../img/pel-2.jpg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .info {
+        margin-top: 140px;
+
+        h2 {
+            font-size: 34px;
+            font-weight: bolder;
+        }
+
+        h6 {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        .btn {
+            padding: 7px 20px;
+            font-weight: bolder;
+            font-size: 15px;
+            color: rgb(90, 90, 90);
+
+            .icon {
+                transition: all 0.5s;
+                margin-left: 3px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: black;
+
+                .icon {
+                    margin-left: 9px;
+                }
+            }
+        }
+    }
+}

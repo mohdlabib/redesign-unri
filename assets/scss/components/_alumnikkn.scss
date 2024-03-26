@@ -1,0 +1,60 @@
+.alumnikkn {
+    margin-top: 45px;
+    margin-bottom: -30px;
+
+    .card {
+        border: none;
+
+        h4 span {
+            background-color: $bg-color;
+            padding: 8px 20px;
+            color: white;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .acos {
+            border-radius: $b-rs;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        a {
+            font-size: 15px;
+            color: rgb(95, 95, 95);
+            text-decoration: none;
+            font-weight: bolder;
+
+            .icon {
+                transition: all 0.5s;
+                margin-left: 3px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: black;
+
+                .icon {
+                    margin-left: 9px;
+                }
+            }
+        }
+
+
+        .iconw {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-top-left-radius: $b-rs;
+            border-bottom-left-radius: $b-rs;
+            background-size: 63%;
+            background-color: lighten($bg-color, 4);
+            left: -20px;
+            height: 2px;
+            width: 2px;
+        }
+    }
+}

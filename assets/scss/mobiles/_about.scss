@@ -1,0 +1,71 @@
+@media only screen and (max-width: 980px) {
+    .about {
+
+        &::before,
+        &::after {
+            content: '';
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            display: none;
+        }
+
+        .photo {
+            order: -1;
+        }
+
+        .photo-1 {
+            border-radius: 10px;
+            height: 270px;
+            width: 100%;
+            left: 0;
+            position: relative;
+            background-image: url('../img/a-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .photo-2 {
+            display: none;
+        }
+
+        .info {
+            margin-top: 50px;
+            margin-bottom: 300px;
+    
+            h2 {
+                font-size: 34px;
+                font-weight: bolder;
+            }
+    
+            h6 {
+                margin-top: 30px;
+                font-size: 16px;
+            }
+    
+            .btn {
+                padding: 7px 20px;
+                font-weight: bolder;
+                font-size: 15px;
+                color: rgb(90, 90, 90);
+    
+                .icon {
+                    transition: all 0.5s;
+                    margin-left: 3px;
+                    font-size: 14px;
+                }
+    
+                &:hover {
+                    color: black;
+    
+                    .icon {
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+    }
+}

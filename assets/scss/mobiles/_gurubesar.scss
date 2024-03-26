@@ -1,0 +1,102 @@
+@media only screen and (max-width: 980px) {
+    .gurubesar {
+        $border-r: 2px;
+
+        .card-logo {
+            border: none;
+            border-radius: 0;
+            position: relative;
+            background: transparent;
+            color: white;
+            top: 0;
+            width: 100%;
+            margin-bottom: -10px;
+    
+            .card-body {
+                span {
+                    color: gold;
+                }
+            }
+    
+            img {
+                display: none;
+            }
+    
+            h4 {
+                font-size: 28px;
+    
+                &.title {
+                    font-weight: bolder;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                }
+            }
+    
+            p {
+                margin-top: 10px;
+                font-size: 13px;
+                font-weight: bolder;
+            }
+        }
+
+
+        .card-lain {
+            display: none;
+        }
+
+        .card-lain-mobile {
+            display: block;
+            position: relative;
+            margin-top: -200px;
+            margin-bottom: 50px;
+
+            .card {
+                background-color: transparent;
+                border-radius: $border-r;
+                border: none;
+                color: white;
+                margin-top: 25px;
+            }
+    
+    
+            .flex-grow-1 {
+                margin-left: 10px !important;
+                margin-bottom: -10px;
+                padding: 14px 0 !important;
+    
+                h6 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: -10px;
+                }
+    
+                p {
+                    margin-top: 10px;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+    
+            .d-flex {
+                border-top-left-radius: $border-r;
+                border-bottom-left-radius: $border-r;
+                background: linear-gradient(to right, lighten($bg-color, 1%), #03753c00);
+            }
+    
+            .card-left {
+                color: white;
+                padding: 10px 25px;
+                background: linear-gradient(60deg, rgb(255, 187, 0), gold);
+                border-top-left-radius: $border-r;
+                border-bottom-left-radius: $border-r;
+    
+                i {
+                    position: absolute;
+                    font-size: 20px;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.layanan {
+    padding-top: 50px;
+    padding-bottom: 130px;
+    background-color: #f8f8f8;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.15) !important;
+    $b-r: 8px;
+
+    .title {
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: bolder;
+        margin-bottom: 50px;
+
+        span {
+            padding: 8px 20px;
+            background-color: $bg-color;
+            font-weight: 500;
+            color: white;
+        }
+
+        .acos {
+            border-radius: $b-rs;
+        }
+
+        .iconw {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-top-left-radius: $b-rs;
+            border-bottom-left-radius: $b-rs;
+            background-size: 63%;
+            background-color: lighten($bg-color, 4) !important;
+            position: relative;
+            left: -20px;
+            height: 2px;
+            width: 2px;
+        }
+    }
+
+    .pertama {
+        img {
+            width: 100%;
+        }
+
+        .card {
+            border-radius: $b-r;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            .card {
+                margin-top: -5px;
+                margin-bottom: 5px;
+                background-color: white;
+                border-bottom: 2px solid gold;
+            }
+        }
+    }
+
+    .kedua {
+        color: $bg-color;
+        border-radius: $b-r;
+        padding: 20px 40px 40px 40px;
+
+        img {
+            width: 100px;
+        }
+
+        h6 {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        p {
+            color: rgb(102, 102, 102);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+    }
+
+
+
+    // kasih animasi bosss
+    .btn-lainya {
+        border-radius: 50px;
+        border: none;
+        background-color: white !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        height: 42px;
+        font-weight: bolder;
+
+        .circle {
+            position: relative;
+            right: 110px;
+            padding: 10px 12px;
+            color: white;
+            font-size: 11px;
+            background-color: rgb(116, 128, 131);
+            border-radius: 50%;
+            transition: all 0.7s;
+        }
+
+        .text {
+            position: relative;
+            color: rgb(102, 102, 102);
+            transition: all 0.5s;
+            right: 0px;
+        }
+
+        &:hover {
+            background-color: lighten($bg-color, 10%) !important;
+
+            .text {
+                color: white;
+                right: 10px;
+            }
+
+            .circle {
+                right: -263px !important;
+                background-color: lighten($bg-color, 10%);
+            }
+        }
+    }
+}

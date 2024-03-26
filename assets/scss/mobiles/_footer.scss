@@ -1,0 +1,223 @@
+@media only screen and (max-width: 980px) {
+    footer {
+        padding-top: 40px;
+        background-color: $bg-color;
+    
+        .fot-1 {
+            img {
+                width: 130px;
+            }
+    
+            h6 {
+                font-size: 26px;
+                font-weight: bolder;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+    
+            p {
+                &.desc {
+                    text-align: justify;
+                    font-size: 13px;
+                    margin-bottom: 0px;
+                }
+    
+                &.contact {
+                    font-size: 14px;
+                }
+            }
+        }
+    
+        .list-group,
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+        }
+    
+        li {
+            font-weight: bolder;
+        }
+    
+        .list-1 {
+            margin-bottom: -10px;
+        }
+    
+        .fot-4 {
+            iframe {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    
+        .footer-atas {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+    
+        .footer-bawah {
+            background-color: darken($bg-color, 2%);
+            opacity: 1;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+    
+            a {
+                text-align: center;
+                align-items: center;
+                color: white;
+                padding: 10px 5px;
+                border-radius: 8px;
+                text-decoration: none;
+    
+                ion-icon {
+                    font-size: 18px;
+                    text-align: center;
+                    margin-bottom: -2px;
+                }
+    
+                &:hover {
+                    background-color: lighten($bg-color, 1%);
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            small {
+                font-size: 11px;
+            }
+
+            .social {
+                text-align: end;
+            }
+        }
+    
+        .fot-1,
+        .fot-2,
+        .fot-3,
+        .fot-4 {
+            color: white !important;
+    
+            li,
+            a {
+                color: white !important;
+            }
+        }
+    
+        .fot-1 {
+            text-align: center;
+            
+            .desc {
+                text-align: center;
+            }
+        }
+
+        .fot-2 {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            margin-bottom: 10px;
+        }
+    
+        // kasih lah boy
+        .subcribe .card {
+            position: relative;
+            top: -90px;
+            padding: 20px 10px 8px 10px;
+            margin-bottom: -80px;
+            border-radius: 10px;
+            border: none;
+    
+            .icons {
+                background-color: #EDEDED;
+                border-radius: 10px;
+                color: #000424;
+                padding: 10px 12px;
+                position: relative;
+                top: 10px;
+            }
+    
+            .flex-grow-1 {
+                margin-left: 20px;
+    
+                h6 {
+                    margin-bottom: 0px;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: rgb(61, 61, 61);
+                }
+    
+                p {
+                    font-size: 13px;
+                    color: rgb(102, 102, 102);
+                }
+            }
+    
+            .form-control {
+                height: 50px;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: 500;
+                border: 2px solid #e7e7e7;
+    
+                &::placeholder {
+                    color: #999; 
+                }
+            }
+    
+            .btn-subs {
+                height: 40px;
+                border-radius: 10px;
+                background: linear-gradient(to right, lighten($bg-color, 10%), lighten($bg-color, 15%));
+                color: white;
+                top: 114px;
+                right: 31px;
+                font-size: 15px;
+                position: absolute;
+                transition: all 1s;
+    
+                span {
+                    transition: all 1s;
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                }
+    
+                span:after {
+                    content: "\f1d8";
+                    font-family: "Font Awesome 5 Free";
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: 10px;
+                    transition: 0.5s;
+                    color: #ffffff;
+                    top: 1px;
+                    font-size: 13px;
+                }
+    
+                &:hover span {
+                    padding-right: 20px;
+                }
+    
+                &:hover {
+                    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15) !important;
+                }
+    
+                &:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+            }
+    
+    
+    
+        }
+
+
+        .asdc {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

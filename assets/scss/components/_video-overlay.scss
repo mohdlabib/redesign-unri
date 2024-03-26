@@ -1,0 +1,67 @@
+header.video-overlay {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+
+    .container {
+        position: relative;
+        z-index: 2;
+
+        img {
+            margin-top: 50px;
+            width: 180px;
+        }
+
+        .title {
+            font-family: "Public Sans", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            margin-top: -5px;
+        }
+
+        .info {
+            margin-top: 35px;
+            font-family: "Public Sans", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .mouse {
+            position: absolute;
+            color: white;
+            left: 50%;
+            bottom: 80px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+    }
+}

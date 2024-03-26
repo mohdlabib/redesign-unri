@@ -1,0 +1,203 @@
+@media only screen and (max-width: 980px) {
+    .mobile-nav, .mobile-menu {
+        display: block;
+    }
+
+    header.topbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: all 2s;
+        z-index: 99999 !important;
+        
+        .navbar-primary {
+            font-family: "Public Sans", sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            color: green !important;
+            height: 70px;
+            position: relative;
+            top: -50px;
+            background-color: white;
+            z-index: 99999 !important;
+
+            .navbar-brand {
+                img {
+                    width: 180px !important;
+                }
+            }
+        }
+
+        .navbar-secodary {
+            position: relative;
+            background-color: $bg-color;
+            height: 50px;
+            top: 26px;
+        }
+    }
+
+    // mobile nav
+    .mobile-nav {
+        position: fixed;
+        bottom: 30px;
+        width: 64%;
+        left: 50%;
+        border-radius: 10px;
+        transform: translateX(-50%);
+        z-index: 99999 !important;
+        
+        .card {
+            background-color: rgb(22, 21, 21);
+            border: none;
+            padding: 14px 5px;
+            
+            .col a {
+                color: white;
+                background-color: lighten(rgb(22, 21, 21), 5);
+                border-radius: 8px;
+                padding: 8px 10px;
+                font-size: 19px;
+
+                &:hover, &:active, &.active {
+                    background-color: lighten($bg-color, 5);
+                }
+            }
+
+        }
+    }
+
+    .mobile-menu {
+        position: fixed;
+        background-color: white;
+        top: 0;
+        overflow: auto;
+        left: 100%;
+        z-index: 99989 !important;
+        height: 100vh;
+        width: 100%;
+        transition: left 0.4s;
+
+        &.active {
+            left: 0;
+        }
+
+
+        .search {
+            position: relative;
+            background-color: lighten($bg-color, 5);
+            padding-top: 20px;
+            padding-left: 26px;
+            padding-right: 26px;
+            width: 100%;
+            
+            .d-flex {
+                padding-top: 60px;
+
+                .searchIcon {
+                    position: absolute;
+                    top: 95px;
+                    left: 45px;
+                    color: #6c757d !important;
+                }
+
+                .btn {
+                    color: white;
+                    font-size: 25px;
+                    margin-top: -8px;
+                }
+
+                .form-control {
+                    text-align: end;
+                    border: none;
+                    height: 36px;
+                    font-size: 11px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .content {
+            background-color: lighten($bg-color, 10);
+            
+            .list-group, .list-group-item {
+                color: white;
+            }
+        }
+
+        .content, .content-2 {
+
+            .list-group, .list-group-item {
+                border: none;
+                background-color: transparent;
+            }
+
+            .linke {
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                .collapse .card {
+                    color: white;
+                    background-color: transparent;
+
+                    .list-group-item {
+                        border: none;
+                        background-color: transparent;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            height: 30px;
+            margin-top: 10px;
+            background-color: black;
+            
+            .d-flex {
+                background-color: black;
+            }
+
+            .dropdown {
+                background-color: black;
+                color: white;
+
+                .dropdown-toggle {
+                    color: white;
+                    text-decoration: none;
+                }
+            
+                img {
+                    width: 20px;
+                    border-radius: 9px;
+                    margin-top: -2px;
+                    margin-right: 5px;
+                }
+
+                .dropdown-menu {
+                    background-color: lighten($bg-color, 10);
+                    min-width: 10px !important;
+                    border: 3px solid white;
+                    margin-left: 10px;
+                    margin-top: -2px;
+
+                    li,
+                    .dropdown-item {
+                        height: 20px;
+                        padding: 0px 5px !important;
+                        font-size: 12px !important;
+                        margin: -5px 0;
+
+                        :hover {
+                            background-color: lighten($bg-color, 10);
+                        }
+                    }
+
+                    li .dropdown-item {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+
+    }
+}

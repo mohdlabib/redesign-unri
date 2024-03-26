@@ -1,0 +1,77 @@
+.pascasarjana {
+    padding: 50px 0;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+    position: relative;
+
+    .bg-warna {
+        position: absolute;
+        background: linear-gradient(to top, lighten($bg-color, 6%), lighten($bg-color, 13%));
+        width: 100%;
+        height: 140px;
+        top: 5px;
+    }
+
+    .card {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 7px;
+        border: none;
+        transition: all 1s;
+        margin-bottom: 10px;
+        z-index: 2;
+        box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+        
+        .card-body {
+            background-color: #fffefaf3;
+            transition: all 1s;
+            padding: 40px 70px;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: 3;
+
+            h4 {
+                font-size: 16px;
+                color: $bg-color !important;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                color: grey;
+                text-align: justify;
+            }
+        }
+
+        img {
+            transition: all 1.5s;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            .card-body {
+                background-color: #32b471d8;
+            }
+
+            .card-body h4,
+            p {
+                color: white !important;
+                z-index: 3;
+            }
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

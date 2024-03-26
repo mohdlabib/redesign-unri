@@ -1,0 +1,152 @@
+@media only screen and (max-width: 980px) {
+    .berita {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        background-color: #ffffff;
+        $b-r: 8px;
+    
+        .card {
+            border: none;
+            cursor: pointer;
+        }
+    
+        .title {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bolder;
+            margin-bottom: 50px;
+            text-align: center !important;
+
+    
+            span {
+                padding: 8px 20px;
+                background-color: $bg-color;
+                font-weight: 500;
+                color: white;
+            }
+    
+            .acos {
+                border-radius: $b-rs;
+            }
+    
+            .iconw {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-top-left-radius: $b-rs;
+                border-bottom-left-radius: $b-rs;
+                background-size: 63%;
+                background-color: lighten($bg-color, 4) !important;
+                position: relative;
+                left: -20px;
+                height: 2px;
+                width: 2px;
+            }
+        }
+    
+        .post-lain {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+
+            .card {
+                height: 250px;
+                width: 100%;
+                overflow: hidden;
+                border-radius: $b-r;
+    
+                &:hover {
+    
+                    img {
+                        border-top-left-radius: $b-r;
+                        border-top-right-radius: $b-r;
+                        transform: scale(1.1);
+                    }
+    
+                    .card-body {
+                        background-color: lighten($bg-color, 9%);
+                        color: white;
+    
+                        h6,
+                        p {
+                            color: white !important;
+                        }
+                    }
+                }
+    
+                .card-body {
+                    bottom: 0;
+                    position: absolute;
+                    transition: all 1s;
+                    background-color: white;
+                    color: black;
+                    z-index: 7;
+                    padding: 17px 20px 50px 20px;
+                    width: 100%;
+                }
+    
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    font-size: 11px;
+                    font-weight: 500;
+                    margin-bottom: 7px;
+                    color: rgb(102, 102, 102);
+                }
+    
+                h6 {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+    
+            img {
+                position: relative;
+                border-top-left-radius: $b-r;
+                border-top-right-radius: $b-r;
+                transition: all 0.5s;
+                width: 100%;
+    
+                &.agaklain {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .post-lainya, .post-1, .post-2, .post-3 {
+            display: none;
+        }
+    
+        a {
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+
+        .lainya-m {
+            display: block;
+            margin-top: 50px;
+
+            a {
+                padding: 7px 20px;
+                font-weight: 600;
+                font-size: 14px;
+                color: rgb(90, 90, 90);
+                text-decoration: none;
+    
+                .icon {
+                    transition: all 0.5s;
+                    margin-left: 3px;
+                    font-size: 13px;
+                }
+    
+                &:hover {
+                    color: black;
+    
+                    .icon {
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
